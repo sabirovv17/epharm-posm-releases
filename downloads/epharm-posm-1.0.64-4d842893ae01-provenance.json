@@ -1,0 +1,13 @@
+{
+  "version": "1.0.64",
+  "commit": "4d842893ae01879fc82603d8f8048e6c4e507555",
+  "sha256": "3bd1d35997e94092045333daea9b11861811a2eff78e49db0cc2c303a2a099e0",
+  "archive": "epharm-posm-1.0.64-4d842893ae01-compat.zip",
+  "files": [
+    "CustomerDisplay.exe",
+    "CustomerDisplay.dll",
+    "CustomerDisplay.deps.json",
+    "CustomerDisplay.runtimeconfig.json",
+    "QRCoder.dll"
+  ]
+}
