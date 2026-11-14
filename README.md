@@ -5,12 +5,12 @@ Application source, pharmacy configuration and credentials are not stored here.
 
 ## Latest update artifact
 
-- Version: `1.0.85`; platform: `win-x64`.
-- Archive: `downloads/epharm-posm-1.0.85-addb2c97bf75-compat.zip`.
-- SHA-256: `dc41228626e0a0cc7970d0aee070605ec244a1ee639ae42932ee177e189f6d38`.
-- Source commit: `addb2c97bf752038688e91a6902369da5194009b`.
-- Provenance: `downloads/epharm-posm-1.0.85-addb2c97bf75-provenance.json`.
-- [Required Windows/main CI](https://github.com/sabirovv17/epharm/actions/runs/43153930079).
+- Version: `1.0.86`; platform: `win-x64`.
+- Archive: `downloads/epharm-posm-1.0.86-20f059be078f-compat.zip`.
+- SHA-256: `76b99ff648afaae60082fefc9d5fed6e4152bc3359733f986ed3a5a679d2f348`.
+- Source commit: `20f059be078f11d26d187b28e1f68414927c02df`.
+- Provenance: `downloads/epharm-posm-1.0.86-20f059be078f-provenance.json`.
+- [Required Windows/main CI](https://github.com/sabirovv17/epharm/actions/runs/43588172996).
 
 This five-file bridge updates an existing full POSM runtime; it is not a fresh-install
 package. It preserves `posm.json`, device identity, pharmacy settings and the local queue.
@@ -34,3 +34,8 @@ epharm repository. Only a signed backend manifest activates this immutable artif
 Version 1.0.85 makes automatic staff sign-in nonblocking for the cashier, keeps
 late login responses from restoring a closed window, and preserves the existing
 update/recovery, pharmacy configuration and queue protections.
+
+Version 1.0.86 retains the session for bounded, unverified recovery during brief unconfirmed
+cashier-process observations, revokes it promptly on a confirmed cashier/account change, and keeps
+registration and recovery nonblocking. Recommendation rules and all four trigger types
+remain unchanged.
