@@ -5,12 +5,12 @@ Application source, pharmacy configuration and credentials are not stored here.
 
 ## Latest update artifact
 
-- Version: `1.0.87`; platform: `win-x64`.
-- Archive: `downloads/epharm-posm-1.0.87-d03a68618ea1-compat.zip`.
-- SHA-256: `97c63384cd77c7118dbb05c4126ced0ab11a8706d3abbc5bd5c3420b97c4c596`.
-- Source commit: `d03a68618ea1ed99f030ba9c451109c46bd8e9e1`.
-- Provenance: `downloads/epharm-posm-1.0.87-d03a68618ea1-provenance.json`.
-- [Required Windows/main CI](https://github.com/sabirovv17/epharm/actions/runs/43664187399).
+- Version: `1.0.88`; platform: `win-x64`.
+- Archive: `downloads/epharm-posm-1.0.88-a860eb027c6f-compat.zip`.
+- SHA-256: `309d804b8b50fd3d64371136e3e8bfc280598d9b203720e6cd865b2911456634`.
+- Source commit: `a860eb027c6f69e099cefb12887e8acfd34e01e3`.
+- Provenance: `downloads/epharm-posm-1.0.88-a860eb027c6f-provenance.json`.
+- [Required Windows/main CI](https://github.com/sabirovv17/epharm/actions/runs/43769773406).
 
 This five-file bridge updates an existing full POSM runtime; it is not a fresh-install
 package. It preserves `posm.json`, device identity, pharmacy settings and the local queue.
@@ -45,3 +45,5 @@ native returns and safe archival of disappeared unpaid checkouts. A direct sale 
 shown recommendation cannot earn its bonus. Evidence admission and automatic wallet credit
 remain controlled by the server; the package preserves staff login, client display, local
 configuration, updater recovery and existing queues.
+
+Version 1.0.88 preserves unsupported queued records, handles Standard-N checkout line reuse for another product, and removes obsolete SMS prompts from new staff registration. Existing runtime dependencies, settings, device identity, queues, recommendations and update recovery are preserved.
