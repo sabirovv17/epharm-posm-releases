@@ -5,12 +5,12 @@ Application source, pharmacy configuration and credentials are not stored here.
 
 ## Latest update artifact
 
-- Version: `1.0.86`; platform: `win-x64`.
-- Archive: `downloads/epharm-posm-1.0.86-20f059be078f-compat.zip`.
-- SHA-256: `76b99ff648afaae60082fefc9d5fed6e4152bc3359733f986ed3a5a679d2f348`.
-- Source commit: `20f059be078f11d26d187b28e1f68414927c02df`.
-- Provenance: `downloads/epharm-posm-1.0.86-20f059be078f-provenance.json`.
-- [Required Windows/main CI](https://github.com/sabirovv17/epharm/actions/runs/43588172996).
+- Version: `1.0.87`; platform: `win-x64`.
+- Archive: `downloads/epharm-posm-1.0.87-d03a68618ea1-compat.zip`.
+- SHA-256: `97c63384cd77c7118dbb05c4126ced0ab11a8706d3abbc5bd5c3420b97c4c596`.
+- Source commit: `d03a68618ea1ed99f030ba9c451109c46bd8e9e1`.
+- Provenance: `downloads/epharm-posm-1.0.87-d03a68618ea1-provenance.json`.
+- [Required Windows/main CI](https://github.com/sabirovv17/epharm/actions/runs/43664187399).
 
 This five-file bridge updates an existing full POSM runtime; it is not a fresh-install
 package. It preserves `posm.json`, device identity, pharmacy settings and the local queue.
@@ -39,3 +39,9 @@ Version 1.0.86 retains the session for bounded, unverified recovery during brief
 cashier-process observations, revokes it promptly on a confirmed cashier/account change, and keeps
 registration and recovery nonblocking. Recommendation rules and all four trigger types
 remain unchanged.
+
+Version 1.0.87 adds source-bound recommendation-sale evidence, verified package quantities,
+native returns and safe archival of disappeared unpaid checkouts. A direct sale without a
+shown recommendation cannot earn its bonus. Evidence admission and automatic wallet credit
+remain controlled by the server; the package preserves staff login, client display, local
+configuration, updater recovery and existing queues.
